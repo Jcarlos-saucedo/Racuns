@@ -1,0 +1,1002 @@
+doctype html
+html(lang="es")
+    head
+      meta(charset="UTF-8")
+      meta(name="viewport", content="width=device-width, initial-sacle=1.0, user-scalabe=no, maximun-scale=1.0, minimun-scale=1.0")
+      meta(http-equiv="X-UA-Comátible", content="ie=edge")
+      link(rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+      link(rel="stylesheet" type="text/css" href="css/estilos2.css")
+      link(rel="stylesheet" type="text/css" href="css/fonts.css")
+      link(rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.css")
+      script(src="http://code.jquery.com/jquery-1.9.1.min.js")
+      script(src="http://code.jquery.com/jquery-latest.js")
+      script(src="https://use.fontawesome.com/releases/v5.0.0/js/all.js")
+      script(src="https://use.fontawesome.com/releases/v5.0.0/js/all.js")
+      script(type="text/javascript" src="/node_modules/bulma-extensions/bulma-iconpicker/dist/bulma-iconpicker.min.js")
+      script(src="js/javascripts.js")
+      script(src="js/jquery.slides.js")
+    body
+      div(class="container is-fullhd" id="contenedor")
+        div(class="container is-fluid")
+          nav.navbar
+           div.navbar-brand
+            div.navbar-start
+              a.navbar-item(href="/microsoft")
+                img(src="imagenes/logo.png" width="112" height="28")
+                span
+                span
+                span
+                p(class="has-text-weight-bold") |
+                a(href="")
+                  button(class="button is-white has-text-weight-bold" id="boton") Office
+                div.dropdown
+                  div.dropdown-trigger
+                    button.button(aria-haspopup="true" aria-controls="dropdown-menu")
+                      span Productos
+                      span(class="icon is-small")
+                        i(class="fas fa-angle-down" aria-hidden="true")
+                div.dropdown
+                  div.dropdown-trigger
+                    a.navbar-link Recursos
+                button(class="button is-white" id="boton") Plantillas
+                button(class="button is-white" id="boton") Soporte
+                button(class="button has-text-weight-bold" id="boton") Comprar Office 365
+           div.navbar-end
+              div(class="navbar-item is-hoverable is-mega is-right")
+                span Todo Microsoft
+                span(class="icon is-small")
+                  i(class="fas fa-angle-down")
+                div.navbar-dropdown(id="blogDropdown" data-style="width: 15rem;")
+                  div(class="container is-fluid")
+                    div.columns
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") Software
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black App para Windows
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black OneDrive
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Outlook
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Skype
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black OneNote 
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") PCs y Dispositivos
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black PCs & tablets
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") Entretenimiento
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Juegos digitales Xbox
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Juegos
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Juegos para Windows
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Peliculas y TV
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") Empresas
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Azure
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Dynamics 365
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft 365
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Industry
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Plataforma de datos
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Advertising
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") Desarrollador
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black .NET 
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Visual Studio
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Windows Server
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Desarrollar aplicaciones para <br> Windows
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Documentos
+                      div.column
+                        h1(class="title is-6 is-mega-menu-title") Otros
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Store
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Microsoft Rewards
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Seguridad y descargas <br>gratuitas
+                        a.navbar-item(href="#")
+                          div.navbar-content
+                            p
+                              small.has-text-black Educación                      
+                  hr.navbar-divider
+                  div.navbar-item
+                    div.navbar-content
+                      div(class="level is-mobile")
+                        div.level
+                          div(class="level-item")
+                            a(href="#" class="a has-text-black")
+                              strong VER MAPA DEL SITIO 
+              button(class="button is-white icon-search" id="boton")
+              button(class="button is-white icon-user-plus" id="boton")
+        div(class="container is-fluid")
+          header
+            h1(style="font-size:45px;") Aprovecha Office al máximo con Office 365
+        div(class="container is-fluid" id="cont")
+          button.button(class="button is-medium" id="boton1" onclick="ShowHideElement()") Para el hogar
+          button.button(class="button is-medium" id="boton2" onclick="ShowHideElement1()") Para empresas
+        hr
+        div(class="container is-fluid" id="mycont")
+          div.columns
+            div.column
+              p Explora Office
+              div.container(id="columna15")
+                br
+                a(href="#")
+                  p(style="font-size:13px;") ¿Buscas Office Hogar y Empresar<br> 2019?
+                br
+                a(href="#")
+                  p(style="font-size:13px;") Office para estudiantes y educadores
+                br
+                a(href="#")
+                  p(style="font-size:13px;") Office para Mac
+                br
+                a(href="#")
+                  p(style="font-size:13px") ¿Qué es Office 365 para el hogar?
+                br
+                p ¿Ya tienes Office 365?
+                br
+                a(href="#")
+                  p(style="font-size:13px;") Renovar la suscripción   
+            div.column(id="col" class="column is-3")
+              div.container(id="columna" class="container has-text-centered")
+                div.container(id="columna2" class="container has-text-centered")
+                  h3 Mejor rentabilidad
+                br
+                p(id="of") Office 365 Hogar
+                br
+                br
+                p(id="pr") MXN$1,749.00 
+                p al año 
+                br
+                p(style="font-family: Estrellass TFB") aaaa
+                  span(id="a") a
+                br
+                button.button(id="bton") Comprar ahora
+                a(href="#")
+                  p O comprar a MXN$169.99 al mes
+                br
+                a(href="#")
+                  p Probar gratis durante un mes >
+                h1(id="tx") Comparte la suscripción con tu familia (hasta 6 personas) en todos los dispositivos.
+                br
+                p Aplicaciones de Office incluidas
+                br
+                div.containter(id="columna7" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/word-icon.png")
+                      span(id="s") Word
+                    li
+                      img(src="iconos/excel-icon.png")
+                      span(id="s") Excel
+                    li
+                      img(src="iconos/powerpoint-icon.png")
+                      span(id="s") PowerPoint
+                br
+                div.containter(id="columna7" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/outlook-icon.png")
+                      span(id="s") Outlook
+                    li
+                      img(src="iconos/publisher-icon.png")
+                      span(id="s") Publisher (solo PC)
+                    li
+                      img(src="iconos/access-icon.png")
+                      span(id="s") Access (solo PC)
+                br
+                p Servicios Incluidos
+                br
+                div.containter(id="columna8" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/onedrive-icon.png")
+                      span(id="s") OneDrive
+                    li
+                      img(src="iconos/skype-icon.png")
+                      span(id="s") Skype
+                br
+            div.column
+              div.container(id="columna" class="container has-text-centered")
+                div.container(id="columna3" class="container has-text-centered")
+                  h3 Más popular
+                br
+                p(id="of") Office 365 Personal
+                br
+                br
+                p(id="pr") MXN$1,299.00 
+                p al año 
+                br
+                p(style="font-family: Estrellass TFB") aaaa
+                  span(id="a") a
+                br
+                button.button(id="bton") Comprar ahora
+                a(href="#")
+                  p O comprar a MXN$169.99 al mes
+                br
+                br
+                h1(id="tx") Para una persona en todos los dispositivos
+                br
+                br
+                p Aplicaciones de Office incluidas
+                br
+                div.containter(id="columna7" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/word-icon.png")
+                      span(id="s") Word
+                    li
+                      img(src="iconos/excel-icon.png")
+                      span(id="s") Excel
+                    li
+                      img(src="iconos/powerpoint-icon.png")
+                      span(id="s") PowerPoint
+                br
+                div.containter(id="columna7" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/outlook-icon.png")
+                      span(id="s") Outlook
+                    li
+                      img(src="iconos/publisher-icon.png")
+                      span(id="s") Publisher (solo PC)
+                    li
+                      img(src="iconos/access-icon.png")
+                      span(id="s") Access (solo PC)
+                br
+                p Servicios Incluidos
+                br
+                div.containter(id="columna8" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/onedrive-icon.png")
+                      span(id="s") OneDrive
+                    li
+                      img(src="iconos/skype-icon.png")
+                      span(id="s") Skype
+                br
+            div.column
+              div.container(id="columna" class="container has-text-centered")
+                br
+                br
+                br
+                br
+                p(id="of") Office Hogar y Estudiantes 2019
+                br
+                br
+                br
+                p(id="pr") MXN$2,599.00  
+                br
+                br
+                p(style="font-family: Estrellass TFB") aaaaa
+                br
+                button.button(id="bton") Comprar ahora
+                h1(id="tx") Compra de pago único
+                br
+                br
+                h1(id="tx") Para una persona; instalación en una PC o Mac.
+                br
+                br
+                p Aplicaciones de Office incluidas
+                br
+                div.containter(id="columna7" class=" has-text-centered") 
+                  ul
+                    li
+                      img(src="iconos/word-icon.png")
+                      span(id="s") Word
+                    li
+                      img(src="iconos/excel-icon.png")
+                      span(id="s") Excel
+                    li
+                      img(src="iconos/powerpoint-icon.png")
+                      span(id="s") PowerPoint
+                div.container(id="columna")
+                  br
+                p Servicios Incluidos
+                br
+                br
+                div.containter(id="columna" class=" has-text-centered") 
+                  h1(id="tx") (no incluido)
+                br
+                br
+                br
+          div(class="container is-fluid")
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3" id="com")
+                p(id="pt") Uso
+              div.column(id="com")
+                span Hasta 6 personas
+              div.column(id="com")
+                span 1 persona
+              div.column(id="com")
+                span 1 equipo Pc o Mac
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3")
+                p(id="pt") Word, Excel, PowerPoint, OneNote
+              div.column
+                span Premium
+              div.column
+                span Premium
+              div.column
+                span Clásico
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3" id="com")
+                p(id="pt") Outlook
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                p 
+            div.columns(class="columns has-text-centered")(class="columns has-text-centered")
+              div.column(class="column is-3")
+                p(id="pt") 1 TB de almacenamiento en la nube de OneDrive para realizar una copia de seguridad de los archivos y las fotos
+              div.column
+                span.icon-checkmark <br>
+                span 6 TB de almacenamiento de OneDrive en total (1 TB por persona)
+              div.column
+                span.icon-checkmark <br>
+                span 1 TB de almacenamiento en total para 1 persona
+              div.column
+                p 
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3" id="com")
+                p(id="pt") Proteger tus archivos confidenciales en el Almacén personal de OneDrive2
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                p 
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3")
+                p(id="pt") Funciona en Windows, macOS, iOS y Android3
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                p 
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3" id="com")
+                p(id="pt") Incluye Access, Publisher4 y muchas más (office.com/information)
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                span.icon-checkmark(id="pro")
+              div.column(id="com")
+                p 
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3")
+                p(id="pt") Soporte técnico continuado
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                p 
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3" id="com")
+                p(id="pt") Cómo comprar
+              div.column(id="com")
+                span Suscripción anual
+              div.column(id="com")
+                span Suscripción anual
+              div.column(id="com")
+                span Compra de pago único
+            div.columns(class="columns has-text-centered")
+              div.column(class="column is-3")
+                p 
+              div.column
+                a(href="#") Más información
+              div.column
+                a(href="#") Más información
+              div.column
+                a(href="#") Más información
+          br
+          div(class="container is-fullhd")
+            div.notification
+              div.columns
+                div.column(class="has-text-centered")
+                  p Office Hogar y Empresas 2019
+                  button.button(href="#" id="bton") Comprar ahora 
+                  br
+                  a(href="#" style="color:blue") Más información
+                div(class="is-divider-vertical")
+                hr(id="hR")
+                div(class="column")
+                  ul
+                    li Compra de pago único para 1 PC o Mac
+                    li Versiones clásicas 2019 de Word, Excel, PowerPoint y Outlook
+                    li Soporte técnico de Microsoft incluido durante 60 días sin costo adicional
+                    li Licencia para uso comercial y doméstico
+          br
+          div(class="container is-fullhd")
+            p(id="pra") 1. Las características de OneNote varían según la plataforma. aka.ms/onenote-office2019-faq.
+            p(id="pra") 2. Hasta el límite de 1 TB en OneDrive por persona.
+            p(id="pra") 3. La disponibilidad de las aplicaciones varía según el dispositivo y el idioma. iOS y Android requieren descargas de la aplicación independientes. La disponibilidad de las aplicaciones móviles varía según el país o la región.
+            a(href="#" id="pra" style="color:blue") Descubre lo que está disponible en tu país o región.
+            p(id="pra") 4. Solo para PC.
+            p(id="pra") 5. Se puede cancelar en cualquier momento.
+        div(class="container is-fluid" id="mycont2")
+          div.columns
+            div.column
+              p Explora Office
+              div.container(id="columna16")
+                br
+                a(href="#")
+                  p(style="font-size:13px;") ¿Buscas Office como compra de pago<br> único?
+                br
+                a(href="#")
+                  p(style="font-size:13px;") Ver opciones para grandes empresas
+                br
+                a(href="#")
+                  p(style="font-size:13px;") Office para Mac
+                br
+                a(href="#")
+                  p(style="font-size:13px") ¿Qué es Office 365 para empresas?
+                div.container(id="columna16")
+                  br
+                  br
+                span.icon-phone
+                a(href="#") 01800-0834-920 <br>
+                span(style="font-size:13px;") Disponible de lun. a vie., de 9:00 a 18:00<br>
+                <br>
+                span.icon-mail4
+                a(href="#" style="font-size:13px;") Ponte en contacto con nosotros <br>
+                br
+                br
+            div.column
+              div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 Hogar
+                  br
+                  br
+                  p(id="pr") MXN$159.00 
+                  p por usuario al mes
+                  p (compromiso anual) 
+                  br
+                  br
+                  button.button(id="bton") Comprar ahora
+                  h1(id="tx") La mejor opción para PyMEs que necesitan, para cada usuario, las aplicaciones de Office en sus versiones web e instalada (en cinco teléfonos, cinco tabletas y cinco PC o Mac), siempre actualizadas a la versión más reciente, además de 1 TB de almacenamiento en la nube de OneDrive. No se incluye correo electrónico empresarial.
+                  br
+                  p Aplicaciones de Office incluidas
+                  br
+                  div.containter(id="columna7" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/word-icon.png")
+                        span(id="s") Word
+                      li
+                        img(src="iconos/excel-icon.png")
+                        span(id="s") Excel
+                      li
+                        img(src="iconos/powerpoint-icon.png")
+                        span(id="s") PowerPoint
+                  br
+                  div.containter(id="columna7" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/outlook-icon.png")
+                        span(id="s") Outlook
+                      li
+                        img(src="iconos/access-icon.png")
+                        span(id="s") Access (solo PC)
+                  br
+                  p Servicios Incluidos
+                  br
+                  div.containter(id="columna8" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/onedrive-icon.png")
+                        span(id="s") OneDrive
+                  br
+                  div.container(id="columna" class="container has-text-centered")
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+            div.column
+              div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 Empresa Premium
+                  br
+                  br
+                  p(id="pr") MXN$241.00 
+                  p por usuario al mes
+                  p (compromiso anual) 
+                  br
+                  br
+                  button.button(id="bton") Comprar ahora
+                  h1(id="tx") La opción más completa para PyMEs que necesitan, para cada usuario, las aplicaciones de Office en sus versiones web e instalada (en cinco teléfonos, cinco tabletas y cinco PC o Mac), siempre actualizadas a la versión más reciente, además de 1 TB de almacenamiento en la nube de OneDrive y un correo electrónico empresarial personalizado con 50 GB. Se incluye Microsoft Teams y Microsoft Sharepoint.
+                  br
+                  p Aplicaciones de Office incluidas
+                  br
+                  div.containter(id="columna7" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/word-icon.png")
+                        span(id="s") Word
+                      li
+                        img(src="iconos/excel-icon.png")
+                        span(id="s") Excel
+                      li
+                        img(src="iconos/powerpoint-icon.png")
+                        span(id="s") PowerPoint
+                  br
+                  div.containter(id="columna7" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/outlook-icon.png")
+                        span(id="s") Outlook
+                      li
+                        img(src="iconos/access-icon.png")
+                        span(id="s") Access (solo PC)
+                  br
+                  p Servicios Incluidos
+                  br
+                  div.containter(id="columna8" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/exchange-icon.png")
+                        span(id="s") Exchange
+                      li
+                        img(src="iconos/onedrive-icon.png")
+                        span(id="s") OneDrive
+                      li
+                        img(src="iconos/sharepoint-icon.png")
+                        span(id="s") SharePoint
+                  div.containter(id="columna8" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/teams-icon.png")
+                        span(id="s") Teams 
+                  br
+            div.column
+              div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 Empresa Essentials
+                  br
+                  br
+                  p(id="pr") MXN$97.00 
+                  p por usuario al mes
+                  p (compromiso anual)
+                  br
+                  br
+                  button.button(id="bton") Comprar ahora
+
+                  h1(id="tx") La opción para PyMEs que sólo necesitan, para cada usuario, las aplicaciones de Office (Word, Excel, PowerPoint y Outlook) en su versión web, además de 1 TB de almacenamiento en la nube de OneDrive y un correo electrónico empresarial con 50 GB. Se incluye Microsoft Teams y Microsoft Sharepoint.
+                  br
+                  p Aplicaciones de Office incluidas
+                  br
+                  span (Solo las versiones para moviles y web)
+                  div.container(id="columna" class="container has-text-centered")
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                    br
+                  p Servicios Incluidos
+                  br
+                  div.containter(id="columna8" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/exchange-icon.png")
+                        span(id="s") Exchange
+                      li
+                        img(src="iconos/onedrive-icon.png")
+                        span(id="s") OneDrive
+                      li
+                        img(src="iconos/sharepoint-icon.png")
+                        span(id="s") SharePoint
+                  div.containter(id="columna8" class=" has-text-centered") 
+                    ul
+                      li
+                        img(src="iconos/teams-icon.png")
+                        span(id="s") Teams 
+                  div.container(id="columna" class="container has-text-centered")
+                    br
+          div(class="container is-fullhd has-text-centered")
+            div.columns
+              div.column
+                span.icon-checkmark2  Parcialmente incluido 
+                span.icon-checkmark  Se incluye
+              div.column
+                p 
+              div.column
+                p 
+              div.column
+                p 
+            hr  
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Versiones de escritorio de aplicaciones de Office para equipos PC y Mac
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                p 
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Versiones web y para móvil de las aplicaciones de Office
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Comunicación y trabajo en equipo
+              div.column
+                p 
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Correo y calendario
+              div.column
+                p 
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Almacenamiento y uso compartido de archivos
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Seguridad y cumplimiento
+              div.column
+                span.icon-checkmark2(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Soporte técnico e implementación
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                span.icon-checkmark(id="pro")
+            hr
+            div.columns
+              div.column(class="is-1")
+                span.icon-plus
+              div.column
+                p Herramientas para desarrollar y administrar tu empresa
+              div.column
+                p 
+              div.column
+                span.icon-checkmark(id="pro")
+              div.column
+                p 
+            hr
+          div(class="container is-fullhd has-text-centered")
+            div.columns
+              div.column
+              div.column(id="col" class="column is-3")
+                div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 para Empresa 
+                  br
+                  br
+                  p(id="pr") MXN$159.00 
+                  p por usuaio al mes
+                  p (compromiso anual) 
+                  br
+                  button.button(id="bton") Comprar ahora
+                  a(href="#")
+                    p O comprar a MXN$191.00 por usuario al mes con una suscripción mensual
+                  br
+                  a(href="#")
+                    p Probar gratis durante un mes
+                  br
+                  a(href="#")
+                    p Más información
+                  br
+                  br
+              div.column(id="col")
+                div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 para Empresa Premium
+                  br
+                  br
+                  p(id="pr") MXN$241.00 
+                  p por usuaio al mes
+                  p (compromiso anual) 
+                  br
+                  button.button(id="bton") Comprar ahora
+                  a(href="#")
+                    p O comprar a MXN$290.00 por usuario al mes con una suscripción mensual
+                  br
+                  a(href="#")
+                    p Probar gratis durante un mes
+                  br
+                  a(href="#")
+                    p Más información
+                  br
+              div.column(id="col")
+                div.container(id="columna" class="container has-text-centered")
+                  br
+                  p(id="of") Office 365 para Empresa Essentials
+                  br
+                  br
+                  p(id="pr") MXN$97.00 
+                  p por usuaio al mes
+                  p (compromiso anual) 
+                  br
+                  button.button(id="bton") Comprar ahora
+                  a(href="#")
+                    p O comprar a MXN$116.00 por usuario al mes con una suscripción mensual
+                  br
+                  br
+                  a(href="#")
+                    p Obtener más información
+                  br
+                  br
+          br
+          div(class="container is-fullhd")
+            div.notification
+              div.columns
+                div.column(class="has-text-centered")
+                  p ¿Quieres obtener Office con un pago único?
+                  button.button(href="#" id="bton") Comprar productos 
+                  br
+                div(class="is-divider-vertical")
+                hr(id="hR")
+                div(class="column")
+                  span Obtén la última versión de los productos de Microsoft Office para tu hogar o empresa con Office 2019 y Office 365.
+          br
+          div(class="container is-fullhd")
+            p(id="pra") 1. Compatible con Windows 7 o posterior. Para macOS, consulta los <a href="#"> requisitos del sistema</a>. Las tabletas con pantallas mayores de 10,1" requieren un plan de Office 365 con licencia para usar escritorio para editar archivos.
+            p(id="pra") Obtener más información acerca de las <a href="#">aplicaciones celulares de uso empresarial </a>.
+            p(id="pra") 2. Para poder realizar llamadas en HD, se necesita hardware HD compatible y una conexión de banda ancha de al menos 4 Mbps.
+            p(id="pra") 3. Este plan funciona con la versión más reciente de Office, Office 2013 y Office 2011 para Mac. Es posible que versiones anteriores de Office, como Office 2010 y Office 2007, solo sean compatibles con Office 365 con funcionalidad reducida. En esta compatibilidad con Office no se incluyen los planes del Quiosco de Exchange Online ni Office 365 F1.
+            p(id="pra") 4. Puede que se requiera una tarjeta de crédito. De ser así, cuando finalice la prueba gratuita, se te cobrará el importe de la suscripción correspondiente. Puedes cancelar la suscripción en cualquier momento para evitar futuros cargos.
+          br
+        div(class="container is-fullhd")
+          hr
+        div(class="container is-fluid")
+            p Seguir Office 
+              span.icon-linkedin2 
+              span.icon-facebook  
+              span.icon-twitter 
+              span.icon-instagram 
+              span.icon-pencil
+            br
+        div(class="container is-fullhd")
+           div.notification
+            div(class="container is-fluid")
+              div.notification
+                div.columns
+                  div.column
+                    p(class="subtitle is-6") Novedades
+                      a.column-item(href="#")
+                        div.column-content
+                          p
+                            small.has-text-black Aplicaciones para Windows 10
+                      a.column-item(href="#")
+                        div.column-content
+                          p
+                            small.has-text-black Aplicaciones de Office
+                  div.column
+                    p(class="subtitle is-6") Microsoft Store
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Perfil de la cuenta 
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Centro de descargas
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Soporte de Microsoft Store
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Devoluciones y rembolsos
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Seguimientos de pedidos
+                  div.column
+                    p(class="subtitle is-6") Educación
+                      a.column-item(href="#")
+                        div.column-content
+                          p
+                            small.has-text-black Office 365 para escuelas
+                      a.column-item(href="#")
+                        div.column-content
+                          p
+                            small.has-text-black Microsoft Azure en educación
+                  div.column
+                    p(class="subtitle is-6") Grandes Empresas
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Azure 
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black AppSource
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Automotriz
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Gobierno
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Atención para la salud
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Manufactura
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Servicios financieros
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Comercio directo
+                  div.column
+                    p(class="subtitle is-6") Desarrollador
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Microsoft Visual Studio
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Red de desarrolladores
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black TechNet
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Channel 9
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Centro de desarrolladores de Office
+                  div.column
+                    p(class="subtitle is-6") Compañia
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Trabajos
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Acerca de Microsoft
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Privacidad en Microsoft
+                    a.column-item(href="#")
+                      div.column-content
+                        p
+                          small.has-text-black Inversionistas
+        div(class="container is-fullhd")
+            div.notification
+              div(class="container is-fluid")
+                div.notification
+                  footer.footer
+                    p
+                        ul
+                          a(href="#" class="icon icon-globe")  Español(México) 
+                          li © Microsoft 2019
+                          li Sobre nuestra publicidad
+                          li Marcas registradas
+                          li Aviso legal
+                          li Privacidad
+                          li Ponte en contacto con Microsoft

@@ -1,0 +1,196 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+		<link rel="stylesheet" href="css/configuracion.css">
+		script(type="text/javascript" src="js/jqueryy-3.4.1.js")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible",content="ie=edge")
+		title Informacion
+	body
+		nav(class="navbar" arial-label='main navigation')
+			div(class="navbar-brand")
+				a(class="navbar-item" href="/microsoft")
+					img(class="posis" src="imagenes/micro.png" width="90" heigth="80")
+
+			div(id="navbarBasicExample" class="nvbar-menu" class="column is-1")
+				div(class="navbar-start")
+					a(class="navbar-item" class="ato" has-margin-left-100) Cuenta
+					a(class="navbar-item" class="posi") Tu información
+					a(class="navbar-item" class="posi") Privacidad
+					a(class="navbar-item" class="posi") Seguridad
+					a(class="navbar-item" class="posi") Rewards
+					a(class="navbar-item" class="posi") Pago y Facturación
+					a(class="navbar-item" class="posi") Servicios y suscripciones
+					a(class="navbar-item" class="posi") Más
+					a(class="navbar-item")
+							img(class="lela" src="imagenes/sesion_icon.png" width="33" heigth="15")
+							
+
+		div(class="l" class="hero is-fulllength is-medium")
+
+			div(class="columns")
+				div(class="tuinformacion" class="column is-4 ")
+					p(class="m" style="color:white;" class="title is-3") Tu información
+				
+				div(class="situado" class="column is-2 is-offset-1")
+					img(src="imagenes/icono1.png" width="25" heigth="10")
+					p 
+						strong(style="color:white;") Funcionar sin contraseñas
+					p Microsoft auntenticador
+					a(style="color:white;") Mas informacion >
+				
+				div(class="situado" class="column is-2")
+					img(src="imagenes/icono2.png" width="25" heigth="10")
+					p 
+						strong(style="color:white;") Cambiar la contraseña
+					p Hacer que la contraseña sea mas segura
+					a(style="color:white;") Cambiar >
+				
+				div(class="situado" class="column is-2")
+					img(src="imagenes/icono3.png" width="25" heigth="10")
+					p 
+						strong(style="color:white;") Administrar las direcciones
+					p Información de facturación y envío
+					a(style="color:white;") Administrar >
+
+
+		div(class="columns")
+			div(class="column is-10 is-offset-1")
+
+				div()
+					nav(class="tabs is-boxed")
+						div(class="container")
+							ul
+								li(class="tab is-active" onclick="openTab(event,'perfilito')" is-active): a(href="#prueba") Perfil
+										
+
+								li(class="tab" onclick="openTab(event,'infodemas')"): a Informacion de contacto
+
+					div(class="container section")
+						div(id="perfilito" class="content-tab")
+							div(class="column is-12" class="fo1")
+								div(class="column is-3" class="fo2")
+									img(class="column is-12" class="lele" src="imagenes/sesion_icon.png")
+									a(class="column is-offset-2") Cambiar de Imagen
+								div(class="column is-9" class="fo3")
+									h1(class="letrah1")
+										strong Nombre de Usuario
+									a Editar nombre.
+									br
+									br
+									div(class="column is-1" class="fo5")
+										img(src="imagenes/usuario_icon.png" width="35" heigth="10")
+										img(src="imagenes/cumple_icon.png" width="35" heigth="10")
+										img(src="imagenes/ubicacion_icon.png" width="35" heigth="10")
+										img(src="imagenes/idioma_icon.png" width="35" heigth="10")
+
+
+									div(class="column is-5" class="fo4")
+										p(class="letrap") correo@outlook.com
+										br
+										p(class="letrap") 00/00/0000
+										br
+										p(class="letrap") Mexico
+										br
+										a(class="letrap") Cambiar el idioma para mostrar
+
+									div(class="column is-6" class="fo5")
+										a(class="letraa") Administrar la forma de iniciar sesion en Microsoft
+										br
+										br
+										a(class="letraa") Editar fecha de nacimiento
+										br
+										br
+										a(class="letraa") Editar país o región
+								div(class="raya" class="column is-9" class="fo4")
+									div(class="column is-1" class="fo5")
+										img(src="imagenes/xbox_icon.png" width="34" heigth="10")
+										img(src="imagenes/skype_icon.png" width="34" heigth="10")
+									div(class="column is-5" class="fo4")
+										a(class="letrap") Ir al perfil de Xbox
+										br
+										br
+										a(class="letrap") Ir al perfil de Skype
+										br
+										br
+
+						div(id="infodemas" class="content-tab")
+							p Correo electrónico
+							div(class="column is-12 raya")
+								div(class="column is-6 fo7")
+									p Estas direcciones de correo están asociadas a tu cuenta de Microsoft.
+									br
+									p
+										strong correo@outlook.com
+									br 
+									br
+									br
+									br
+								div(class="column is-6 fo8")
+									br
+									br
+									p Tu correo para iniciar sesión
+									a Administrar permisos de comunicación
+									br
+									a Administrar esta dirección de correo electrónico
+									br
+									br
+									br
+							p Teléfono
+							div(class="column is-12 raya")
+								div(class="column is-6 fo7")
+									p No existen números de teléfono asociados con esta cuenta
+									a Agregar un número de teléfono a la cuenta
+									br
+									a Dejar de usar contraseñas y proteger la cuenta
+									br
+									br
+								div(class="column is-6 fo8")
+									br
+									a Obtener información sobre cómo conectar el teléfono y el PC y descargar aplicaciones
+									br
+									br
+							p Dirección
+							div(class="column is-12 raya")
+								div(class="column is-12 fo7")
+									p Para ver las direcciones asociadas con tu cuenta, visita 
+										a Libreta de direcciones
+								br
+								br
+									
+					div
+						h1(class="title is-5") Ayuda con la cuenta Microsoft
+						
+					div(class="column is-12" class="raya" class="imag")
+						a(class="margenn") Obtener ayuda con la cuenta de Microsoft
+						br
+						a(class="margenn") Cambia la dirección de correo electrónico de tu cuenta de Microsoft
+						br
+						a(class="margenn") Proteger tu cuenta Microsoft
+						br
+						a(class="margenn") Cómo cerrar la cuenta
+						br
+						a(class="margenn") ¡Estamos contratando! Trabaja en este sitio web
+						br
+				div(class="column is-12" class="fo5")
+					br
+					br
+					img(src="imagenes/mundo_icon.png" width="30" heigth="10" class="imag")
+					a(class="final2") © Microsoft 2019
+					a(class="final2") Comentarios 
+					a(class="final2") Contacto 
+					a(class="final2") Términos de uso 
+					a(class="final2") Privacidad y cookies
+					a(class="final") Español (España, alfabetización internacional)
+
+			
+
+
+
+					
+					
+					
+					
+					

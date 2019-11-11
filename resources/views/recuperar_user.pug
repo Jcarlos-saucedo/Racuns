@@ -1,0 +1,30 @@
+doctype html
+html(lang="es")
+head
+	meta(charset="UTF-8")
+	meta(name="viewport", content="width=device-width, initial-scale=1.0")
+	meta(http-equiv="X-UA-Compatible", content="ie-edge")
+	title Recuperar el nombre de usuario
+	link(rel="icon", href="imagenes/favicon.ico")
+	link(rel="stylesheet", href="../css/estilo.css")
+	link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+	style(type="text/css")
+body
+	section
+		div(class="hero is-fullheight fondouno")
+			div(class="has-background-white" id="blanco")
+				figure.image
+					<img src="imagenes/micro.png" style="max-width:120px; margin-top:30px; margin-left: 40px;" imagen1>	
+					h4(class="title is-4 has-text-left  has-text-black textoo") Recuperar el nombre de usuario	
+					p(class="has-text-left textoo2") Escribe una dirección de correo alternativa o un<br> número de teléfono asociado a tu cuenta de<br> Microsoft.		
+					input(class="input inputuno" type="text" placeholder="Correo electrónico o teléfono")
+					
+					div(class="field  is-grouped is-grouped-right")
+						p(class="control boton1")
+							a(class="button is-light has-text-black boton1") Cancelar
+						p(class="control  boton1")
+							a(class="button is-link") Siguiente
+			div(id= "blanco2")
+				div( style="margin-top:5px; text-align:right;")
+					a(class="has-text-white" target="_blank" rel="noreferrer noopener" href="https://www.microsoft.com/es-mx/servicesagreement/default.aspx" class="text "  style="margin-right:8px; margin-left:4px  font-size:20") Términos de uso 
+					a(class="has-text-white" target="_blank" rel="noreferrer noopener"  href="https://go.microsoft.com/fwlink/?LinkID=521839"  style="margin-left:4px") Privacidad y cookies

@@ -1,0 +1,67 @@
+doctype html
+
+html(lang="es")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie-edge")
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="text/javascript" src="js/jquery-3.4.1.js"></script>
+  link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+  title Crear Cuenta
+
+body(class="")
+  div(class="hero is-fullheight fondocc ")
+    div(id="c-slideer")
+      div(id="slideer")
+        
+        section(class="techo")
+          div(class="cuadcc estemen")
+            figure(class="image margen2")
+              img(src="imagenes/micro-logo.jpg" style="max-width:150px;")
+            p(class="title is-4 margen") Crear cuenta
+            div(class=" margen enlinea")
+              form(method="POST" action="/register" id="form1")
+                div(class="form-group" )
+                  input(class="input" type="email" name="email" placeholder="Correo nuevo")
+              div(class="field")
+                div(class="control")
+                  div(class="select" style="font-size:15px;")
+                    select
+                      option(style="font-size:15px;") @Outlook.com
+                      option(style="font-size:15px;") @Hotmail.com
+            div(class="button abajo" id="btn-next") Siguiente 
+
+        section(class="techo2")
+          div(class="cuadcc2 estemen")
+            figure(class="image margen2")
+              img(src="imagenes/micro-logo.jpg" style="max-width:150px;")
+            div(class=" margen" id="btn-prev") 
+              i(class="fas fa-arrow-left ") 
+            p(class="title is-4 margen") Creacion de una contraseña
+            p(class="is-1 separa margen") Es necesario escribir la contraseña que se quiera utilizar  con la cuenta. 
+            div(class=" margen separa")
+              form(method="POST" action="/register" id="form2")
+                div(class="form-group")
+                  input(class="input" type="password" name="password" id="password" placeholder="Crear una contraseña")
+              
+            div(class=" umargen enlinea")
+              input(class="" type="checkbox" id="show")
+              p(class="lift") Mostrar contraseña
+            div(class="enlinea separa")
+              input(class="umargen" type="checkbox" )
+              p(class="toper lift") Me gustaria obtener informacion, sugerencias y ofertas de los productos y servicios de Microsoft
+            p(class="margen letsize") Al elegir la opcion Siguiente, aceptas el 
+              a(href="") Contrato de servicios de Microsoft 
+              y y la 
+              a(href="") Declaracion de privacidad y cookies.
+            div(class="button abajo2" id="btnEnv" type="button") Siguiente
+              
+            
+
+  
+  script(src="js/slider.js")
+
+
+      

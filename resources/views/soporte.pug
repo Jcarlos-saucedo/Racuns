@@ -1,0 +1,703 @@
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie-edge")
+        title Obtener ayuda con Outlook.com - Outlook
+        link(rel="icon", href="imagenes/favicon.ico")
+        link(rel="stylesheet", href="css/estilo2p.css")
+        link(rel="stylesheet", href="css/fonts.css")
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+        style(type="text/css")
+        script(src="js/jquery.slides.js")
+        script(src="js/javascriptsp .js")
+        script(src="js/pag2.js")
+        script(src="js/jquery-3.4.1.js")
+    body
+        div(class="container is-fluid")
+            nav.navbar
+                div.navbar-brand
+                    div.navbar-start
+                        a.navbar-item
+                            img(src="imagenes/micro2.png" style="width:108px; height:23px; margin-left:40px;")
+                            span
+                            span
+                            span
+                            //p(class="has-text-weight-bold") |
+                            a
+                            button(class="button is-white has-text-weight-bold" style="font-size:19px;") Office
+                            span
+                            button(class="button is-white" id="boton") Productos
+                            button(class="button is-white" id="boton") Recursos
+                            button(class="button is-white" id="boton") Plantillas
+                            button(class="button is-white has-text-weight-bold" id="boton") Soporte técnico
+                            button(class="button has-text-weight-bold" style="margin-top:6px;" id="boton") Comprar Office 365
+                    div.navbar-end
+                        div(class="navbar-item dropdown is-mega" id="cursor")
+                            span(style="margin-left:250px;") Todo Microsoft
+                            span(class="icon is-small")
+                                i(class="fas fa-angle-down")
+                            div.navbar-dropdown( data-style="width: 15rem;")
+                                div(class="container is-fluid")
+                                    div.columns(style="margin-top:30px; margin-left: 20px;")
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title" ) Software
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small App para Windows
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small OneDrive
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Outlook
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Skype
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small OneNote 
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title") PCs y Dispositivos
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small PCs & tablets
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Accesorios
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title") Entretenimiento
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Juegos digitales Xbox
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Juegos
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Juegos para Windows
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Peliculas y TV
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title") Empresas
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Azure
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Dynamics 365
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft 365
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Industry
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Plataforma de datos
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Advertising
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title") Desarrollador
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small .NET 
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Visual Studio
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Windows Server
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Desarrollar aplicaciones para <br> Windows
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Documentos
+                                        div.column
+                                            h1(class="title is-6 is-mega-menu-title") Otros
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Store
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Microsoft Rewards
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Seguridad y descargas <br>gratuitas
+                                            a.navbar-item(href="#")
+                                                div.navbar-content
+                                                    p
+                                                        small Educación
+                                    hr.navbar-divider
+                                    div.navbar-item
+                                        div.navbar-content
+                                            div(class="level is-mobile")
+                                                div.level
+                                                    div(class="level-item" )
+                                                        a(href="#" class="a has-text-black" )
+                                                        strong(style="margin-left: 38em;") VER MAPA DEL SITIO
+                                                        i(class="fas fa-chevron-right")
+                            button(class="button is-white icon-search" id="boton")
+                            button(class="button is-white fas fa-shopping-cart" id="boton")
+                            button(class="button is-white icon-user-plus" id="boton")
+        div(class="container is-fullhd")
+            nav.navbar(style="background-color:#F4F4F4;")
+                div.navbar-brand
+                    div.navbar-start(id="alinear")  
+                        button(class="button is-white" id="botonnav") Aplicaciones
+                        button(class="button is-white" id="botonnav") Instalar
+                        
+                        button(class="button is-white" id="botonnav") Cuenta
+                        button(class="button is-white" id="botonnav") Aprendizaje
+                        button(class="button is-white" id="botonnav") Administrador
+                    div.navbar-end   
+        div(class="container is-fluid")
+            h1(class="title is-1" id="titulo1") Obtener ayuda con Outlook.com
+            h6(class="subtitle is-6" id="sub1") <i>Outlook.com</i> 
+            p(id="parrafo1") Saque más partido a su correo electrónico con la nueva versión de Outlook.com. Hemos mejorado la búsqueda para que encontrar lo que busca sea más fácil que nunca. Las nuevas características, como Archivos o las vistas previas de datos adjuntos, le permiten ver las imágenes y los archivos sin salir de la Bandeja de entrada. Ahora puede agregar emojis y GIF a sus mensajes.
+            p(class="notification" id="notificacion1") <b>Nota:</b> Para cambiar rápidamente la configuración para que la bandeja de entrada tenga el aspecto que quiera, vea <a id="a1" href="https://support.office.com/es-es/article/cambiar-el-aspecto-del-buz%C3%B3n-en-outlook-com-y-el-nuevo-outlook-en-la-web-b41c2ecb-f23c-42b3-b7f8-659646d5e58c">Personalizar la nueva experiencia de Correo en Outlook.com</a>.
+            h2(class="title is-2" id="titulo2") Novedades de Outlook.com
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-600px;") Qué verá en Correo
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1150px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+                        p Al iniciar sesión en Outlook.com, irá directamente a la Bandeja de entrada
+                        img(src="imagenes/ima1.png")
+                        table(class="table is-striped" id="tabla1")
+                            thead
+                                tr
+                                    th Descripción
+                                    th Acciones
+                            tbody
+                                tr
+                                    td Mensaje
+                                    td Para crear un nuevo mensaje, seleccione <b>Nuevo mensaje</b>.
+                                tr
+                                    td Lista de carpetas
+                                    td La lista incluye las carpetas de su buzón. Puede incluir otras carpetas, como por ejemplo, Favoritos y Archivo.<br> Seleccione <b>Expandir <i class="fas fa-angle-down" aria-hidden="true"></b></i> para mostrar la lista de carpetas o seleccione <b>Contraer<i class="fas fa-angle-up"></i></b> para ocultarla.<br> Haga clic derecho en una carpeta existente y seleccione Crear nueva subcarpeta.<br> Vea Trabajar con carpetas de mensajes en Outlook.com para obtener más información sobre las carpetas disponibles.
+                                tr
+                                    td Cuadro de búsqueda
+                                    td En el cuadro Buscar, escriba el nombre o la dirección de correo electrónico de una persona o una palabra clave que quiera buscar y presione Entrar o seleccione Icono de búsqueda <i class="fas fa-search"></i> .
+                                        img(src="imagenes/ima2.png")
+                                tr
+                                    td Lista de mensajes
+                                    td Se muestran los mensajes de la carpeta actual. Puede haber también una alerta visual para indicar que un mensaje no se ha leído, que tiene datos adjuntos o que está marcado.<br>
+                                        En la parte superior de la lista de mensajes, puede elegir cómo quiere ver la lista.
+                                        Seleccione <b>Filtrar</b> y elija una de las siguientes opciones <b>Todos, No leídos, A mí, Marcados</b> u <b>Ordenar por</b>.
+                                        Cada mensaje también tiene una minibarra de herramientas. Para cada mensaje, puede eliminarlo, marcarlo como no leído, marcar el mensaje o anclarlo para mantenerlo en la parte superior de la carpeta.
+            div(class="dropdown dro2" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-580px;") Qué verá en Calendario
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1100px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+                        p Al iniciar sesión en Outlook.com, irá directamente a la Bandeja de entrada
+                        img(src="imagenes/ima1.png")
+                        table(class="table is-narrow" id="tabla1")
+                            thead
+                                tr
+                                    th Descripción
+                                    th Acciones
+                            tbody
+                                tr 
+                                    td Nuevo evento
+                                    td Para crear un nuevo evento, seleccione Nuevo evento. Después, rellene la información sobre el evento.
+                                tr
+                                    td Sus calendarios
+                                    td <b>En Calendarios, Mi calendario</b> es la selección predeterminada y muestra el calendario en la vista Mes. Puede avanzar o retroceder por los meses del calendario con las flechas situadas encima de este.<br>Puede agregar otros calendarios (por ejemplo, un calendario de vacaciones), seleccionando Descubrir calendarios en el panel izquierdo. Después de agregar un nuevo calendario, podrá elegir si quiere que se muestre o no, activando o desactivando la opción de calendario.<br>Si decide que no quiere el calendario que ha creado, haga clic derecho y seleccione <b>Quitar > Eliminar</b>.
+            div(class="dropdown dro2" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-580px;") Qué verá en Contactos
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1100px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+                        p Al iniciar sesión en Outlook.com, irá directamente a la Bandeja de entrada
+                        img(src="imagenes/ima1.png")
+                        table(class="table is-narrow" id="tabla1")
+                            thead
+                                tr
+                                    th Descripción
+                                    th Acciones
+                            tbody
+                                tr 
+                                    td Nuevo evento
+                                    td Para crear un nuevo evento, seleccione Nuevo evento. Después, rellene la información sobre el evento.
+                                tr
+                                    td Sus calendarios
+            div(class="dropdown dro2" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-530px;") Qué verá en las nuevas Tareas
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:999px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+                        p Al iniciar sesión en Outlook.com, irá directamente a la Bandeja de entrada
+                        img(src="imagenes/ima1.png")
+                        table(class="table is-narrow" id="tabla1")
+                            thead
+                                tr
+                                    th Descripción
+                                    th Acciones
+                            tbody
+                                tr 
+                                    td Nuevo evento
+                                    td Para crear un nuevo evento, seleccione Nuevo evento. Después, rellene la información sobre el evento.
+                                tr
+                                    td Sus calendarios
+
+                            
+
+
+
+
+
+
+
+            h2(class="title is-2" id="titulo2") Obtener ayuda con Outlook.com
+            p(id="parrafo2") Para cambiar la configuración de Correo para que la bandeja de entrada tenga el aspecto que quiera y se comporte según sus preferencias, vea <a id="a1">Personalizar la nueva experiencia de Correo en Outlook.com</a>. Consulte también el <a id="a1">foro de la Comunidad de Outlook.com</a>.
+                div(class="dropdown dro4" id="drop")
+                    div(class="dropdown-trigger")
+                        button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                            span(style="margin-left:-530px;") Desactivar la bandeja prioritaria
+                            span(class="icon is-small")
+                                i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1000px;")
+                    div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                        div(class="dropdown-content  ")
+                            div(style="width:800px; margin-top:-10px; text-align: left;")
+                                p 1. Seleccione <i class="fas fa-cog"></i> para abrir el panel de configuración.
+                                p 2. Mueva el botón al lado de <b>Bandeja de entrada prioritaria</b> para desactivarlo.
+            
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-500px;") Mostrar u ocultar el panel de lectura
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:940px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-410px;") Perzonalizar o desactivar la vista de conversación
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:760px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-600px;") Cambiar la contraseña
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1140px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-339px;") Adjuntar un mensaje de correo electrónico a otro mensaje
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:627px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-300px;") Buscar datos adjuntos en un mensaje en la vista de conversación
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:540px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+            div(class="dropdown dro" id="drop")
+                div(class="dropdown-trigger")
+                    button(class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="dropboton")
+                        span(style="margin-left:-540px;") Crear un evento de calendario
+                        span(class="icon is-small")
+                            i(class="fa fa-angle-down fas fa-2x" aria-hidden="true" style="margin-left:1020px;")
+                div(class="dropdown-menu" id="dropdown-menu" role="menu")
+                    div(class="dropdown-content  ")
+                        
+            
+
+
+
+
+            h2(class="title is-2" id="titulo2") Obtener más ayuda con la nueva versión de Outlook.com
+                div(class="container is-fluid")   
+                    div.columns(id="columnas3")
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Correo electrónico: Redactar o<br> responder
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Crear, responder o reenviar<br> mensajes de correo electrónico<br> en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Agregar un vínculo a un mensaje<br> de correo electrónico con vista<br> previa del vínculo en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Agregar un vínculo a un mensaje<br> de correo electrónico con vista<br> previa del vínculo en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Enviar correo electrónico desde<br> una dirección diferente en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Usar una cuenta de<br> almacenamiento con<br> Outlook.com
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Correo electrónico: <br>Personalizar configuración
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Personalizar el mensaje de<br> correo electrónico en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Personalizar su nueva experiencia<br> de Correo en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Cambiar el tamaño de fuente y el<br>aspecto del correo electrónico en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Cambiar la configuración de<br> zona horaria e idioma en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Ordenar los mensajes de correo<br> electrónico en Outlook.com
+                        div.column
+                            p(class="subtitle ti is-6 ti has-text-weight-bold has-text-black") Correo electrónico: <br>Personalizar configuración
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Crear una carpeta en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Mover o cambiar el nombre de<br> una carpeta en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Eliminar una carpeta en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Organizar la bandeja de entrada<br> con Archivo, Limpiar y otras<br> herramientas de Outlook.com
+                    div.columns(id="columnas3")
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Correo electrónico: Limpiar la<br> Bandeja de entrada
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Eliminar todos los correos<br> electrónicos en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Restaurar mensajes de correo<br> electrónico eliminados en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Usar reglas de bandeja de<br> entrada en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Marcar un mensaje como correo<br> no deseado o bloquear<br> remitentes en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Lidiar con el abuso, la<br> suplantación de identidad<br> (phishing) o la suplantación de<br> direcciones (spoofing) en<br> Outlook.com
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Contactos y tareas
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Crear, ver y editar contactos y<br> listas de contactos en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Exportar contactos de<br> Outlook.com a un archivo CSV
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Importar contactos a una cuenta<br> de Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Usar Tareas en Outlook.com
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Calendario
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Crear, modificar o eliminar una<br> convocatoria de reunión o una<br> cita en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Buscar su Calendario en<br> Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Importar o suscribirse a un<br> calendario en Outlook.com
+                                hr(id="br1")
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small Compartir un calendario en<br> Outlook.com
+                    div.columns(id="columnas3")
+                        div.column
+                            p(class="subtitle ti is-6 has-text-weight-bold has-text-black") Solución de problemas
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small Desbloquear una cuenta de Outlook.com
+                            hr(id="br1")
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small Solución de problemas de sincronización del correo electrónico de Outlook.com
+                            hr(id="br1")
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small El correo electrónico enviado en Outlook.com devuelve el mensaje “No entregado”
+                            hr(id="br1")
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small Outlook.com ya no admite la autenticación AUTH PLAIN
+                            hr(id="br1")
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small Windows Live Mail 2012 no se conecta a Outlook.com
+                            hr(id="br1")
+                            a.column-item(href="#")
+                                div.column-content
+                                    p(id="textocolumnas")
+                                        small Problemas conocidos de los calendarios compartidos en Outlook
+                hr(style="width:840px; height:3px; margin-left:-50px;")
+                div(class="container is-fluid" style="margin-top:10px;" )   
+                    div.columns(id="columnas3")
+                        div.column
+                            p(class="subtitle is-4 has-text-weight-bold has-text-black ") Ampliar sus conocimientos de Office
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small(class="") Explorar los cursos <i class="fas fa-angle-right"></i>
+                        div.column
+                            p(class="subtitle is-4 has-text-weight-bold has-text-black ") Obtener nuevas características<br> primero
+                                a.column-item(href="#")
+                                    div.column-content
+                                        p(id="textocolumnas")
+                                            small(class="") Únase a los participantes de Office Insider <i class="fas fa-angle-right"></i>
+        div(class="container is-fullhd" style="border-bottom: 1px solid #A1A1A1;  ")
+            div.notification(style="height: 60px;")
+                p(id="preguntaboton") ¿Le ha sido útil esta información?
+                div(class="field  is-grouped is-grouped" id="si")
+                    p(class="control")
+                        button(class="button is-light has-text-black") Sí
+                    p(class="control")
+                        button(class="button is-light has-text-black") No
+
+
+
+        div(class="container is-fullhd" )
+            div.notificationdiv.notification
+                div(class="container is-fluid")
+                    div.notification
+                        div.columns
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Novedades
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Aplicaciones para Windows 10 
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Aplicaciones de Office                                     
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Microsoft Store
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Perfil de la cuenta 
+                        
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Centro de descargas
+                            
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Soporte de Microsoft Store
+                                
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Devoluciones y rembolsos
+                                
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Seguimientos de pedidos
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Educación
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Office 365 para escuelas
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Microsoft Azure en educación
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Empresas
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Azure 
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") AppSource
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Automotriz
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Gobierno
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Atención para la salud
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Manufactura
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Servicios financieros
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Comercio directo
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Desarrollador
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Microsoft Visual Studio
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Red de desarrolladores
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") TechNet
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Channel 9
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Centro de desarrolladores de Office
+                            div.column
+                                p(class="subtitle is-6 has-text-weight-bold") Compañía
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Trabajos
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Acerca de Microsoft
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Privacidad en Microsoft
+                                    column-item(href="#")
+                                        div.column-content
+                                            p
+                                                small(id="ultimo") Inversores
+            
+        div(class="column is-12" style="background-color:#F5F5F5; margin-top:-40px;")
+            br
+            br
+            
+            a(class="final1") © Microsoft 2019
+            a(class="final1") Sobre nuestra publicidad
+            a(class="final1") Marcas registradas
+            a(class="final1") Aviso legal
+            a(class="final1") Privacidad
+            a(class="final1" ) Ponte en contacto con Microsoft
+            a(href="#" class="icon icon-globe final" style="margin-left:50px;") Español(España)
+                
+    script(src="js/prueba.js")
+    script(src="js/prueba2.js")
+    script(src="js/prueba3.js")
+    script(src="js/prueba4.js")

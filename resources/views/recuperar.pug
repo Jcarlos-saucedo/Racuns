@@ -1,0 +1,65 @@
+doctype html
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie-edge")
+		title Recuperar el nombre de usuario
+		link(rel="icon", href="imagenes/favicon.ico")
+		link(rel="stylesheet", href="css/estilop.css")
+		link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css")
+		link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous")
+		style(type="text/css")
+		script(src="js/jquery-3.4.1.js")
+	body(class="fondouno ")
+		div(id="c-slideer" )
+			div(id="slideer")
+				section
+					div(class="hero is-fullheight uva")
+						div(id="blanco")
+							figure.image
+								<img src="imagenes/micro.png" style="max-width:120px; margin-top:30px; margin-left: 40px;" imagen1>	
+								h4(class="title is-4 has-text-left  has-text-black textoo") Recuperar el nombre de usuario	
+								p(class="has-text-left has-text-black textoo2") Escribe una dirección de correo alternativa o un<br> número de teléfono asociado a tu cuenta de<br> Microsoft.		
+								input(type="text" placeholder="Correo electrónico o teléfono")
+								div(class="field  is-grouped is-grouped-right botones")
+									p(class="control")
+										a(class="button is-light has-text-black botonuno") Cancelar
+									p(class="control")
+										a(class="button is-link" id="next") Siguiente
+				section
+					div(class="hero  bubble uva")
+						div(class="has-background-white" id="blanco3")
+							figure.image
+								<img src="imagenes/micro.png" style="max-width:120px; margin-top:30px; margin-left: 40px;" imagen1>
+								h4(class="title is-4 has-text-left  has-text-black textoo") Recuperar el nombre de usuario
+								p(class="has-text-left has-text-black textoo2") Escribe una dirección de correo alternativa o un<br> número de teléfono asociado a tu cuenta de<br> Microsoft.
+								div(class="field has-addons")
+									p(class="control " )
+										span.select
+											select(id="exten")
+												option +52
+												option +691
+									p.control
+										input(class="input" type="text" placeholder="Numero de telefono" style="margin-left:10px; width:17em;")
+								p(class="has-text-left has-text-black textoo2" style="margin-top:15px;") Comprobar teléfono mediante:
+									div.control(style="margin-left:45px;")
+										
+										input(type="radio" name="answer")
+										label(class="radio") Mensaje de texto
+									div.control(style="margin-left:45px;")
+										
+										input(type="radio" name="answer")
+										label(class="radio") Llamada
+								p(class="textoo2" style="margin-top:15px;") 
+									a(href="#") Usa el correo electrónico en su lugar
+								div(class="field  is-grouped is-grouped-right botones")
+									p(class="control")
+										a(class="button is-light has-text-black botonuno") Cancelar
+									p(class="control")
+										a(class="button is-link") Siguiente
+		div(id="blanco2")
+				div( style="margin-top:5px; text-align:right;")
+					a(class="has-text-white" target="_blank" rel="noreferrer noopener" href="https://www.microsoft.com/es-mx/servicesagreement/default.aspx" class="text "  style="margin-right:8px; margin-left:4px  font-size:20") Términos de uso 
+					a(class="has-text-white" target="_blank" rel="noreferrer noopener"  href="https://go.microsoft.com/fwlink/?LinkID=521839"  style="margin-left:4px") Privacidad y cookies
+	script(src="js/nextVentana.js")

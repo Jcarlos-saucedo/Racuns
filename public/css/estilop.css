@@ -1,0 +1,132 @@
+
+.fondouno {
+  background-image: url(../imagenes/convergedbg.jpg);
+  background-size: 100%; 
+  background-repeat: no-repeat; 
+  overflow: hidden; 
+}
+div#blanco{
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 119px;
+	width: 440px;
+	height: 338px;
+	margin-bottom: auto;
+	margin-left: 450px;
+	
+	background-color:  #ffffff ;
+	overflow: hidden;
+	box-sizing: border-box;	
+}
+#blanco2{
+	margin-top: -30px;
+	margin-bottom: all;
+	width: 100%;
+	height: 30px;
+	background-color: #000000; opacity: 0.7;
+	overflow: hidden;
+	text-align: left;
+	font-size: 12px;
+		
+}
+#blanco3{
+	background: #FFFFFF;
+	margin: 0 auto;
+	margin-top: 45px;
+	width: 440px;
+	height: 510px;
+	margin-bottom: auto;
+	margin-left: 450px;
+	
+	background-color:  #ffffff ;
+	overflow: hidden;
+	box-sizing: border-box;	
+}
+.imagen1{
+	margin-top: 40px;
+	margin-left: 40px;
+}
+.textoo{
+	font-family: sans-serif;
+	margin-left: 40px;
+	margin-right: 40px;
+}
+.textoo2{
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-top: -13px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	font-size: .9375rem;
+	font-weight: 400;
+}
+input[type=text]{
+	width: 360px;
+	margin-left: 40px;
+	border: none;
+	border-bottom: 1px solid blue;
+	background-color: #ffffff;
+	font-size:12;
+	font-family: sans-serif;
+}
+.botones{
+	text-align: center;
+	margin-right: 40px;
+	margin-top: 10px;
+	font-family: sans-serif;
+	border-radius: 0px 0px 0px 0px;
+	border-bottom-style: none;	
+}
+
+.boton1{
+	display: inline-block;
+	position: relative;
+	color:  #fc0026; 
+}
+.pie{
+	opacity: 0.2;
+	background-color: #0000;
+	margin-top: 250px;
+}
+.termi{
+	background-color: transparent;
+}
+#exten{
+	margin-left: 40px;
+	display: flex;
+	border: none;
+	border-bottom: 1px solid blue;
+	background-color: #ffffff;
+}
+}
+#tama{
+	display: flex;
+	
+}
+
+#c-slideer{
+	
+	
+	width: 100%;
+	
+	position: relative;
+	overflow: hidden;
+}
+#slideer{
+	display: flex;
+	width: 200%;
+}
+#slideer section{
+	width: 100%;
+}
+#slideer div[class="uva"]{
+	display: block;
+	width: 35%;
+	height: 100%;
+
+}
+.boudy{
+	display: flex;
+	min-height: 100vh;
+}

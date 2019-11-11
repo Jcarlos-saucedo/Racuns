@@ -1,0 +1,63 @@
+doctype html
+html(lang="en")
+	head
+		meta(charset="UTF-8")
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
+		<link rel="stylesheet" href="css/configuracion.css">
+		script(type="text/javascript" src="js/jquery-3.4.1.js")
+		meta(name="viewport",content="width=device-width,initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible",content="ie=edge")
+		title Iniciar Sesion
+	body(class="Fondo hero is-fullheight")
+		div(class="cuadro" id="c-slideer")
+			div(id="slideer")
+				section
+					div(class="cuadro2 mmm")
+						fieldset
+							img(class="confimagen" src="imagenes/Microsoft.png")
+							h1(class="title is-4") Iniciar sesión
+							form(method="POST" action="/login" id="form1")
+                                    div(class="form-group")
+							            input(class="input" type='email' name='email' placeholder="Correo electrónico,teléfono o Skype")
+							div(class="margen")
+								p ¿No tiene cuenta? 
+									a( href='/registro') Cree una.
+								br
+								a( href='') Iniciar sesión con una llave de seguridad.
+								br
+								br
+								a( href='/inicioGitHub') Opciones de inicio de sesión.
+								br
+								button(class="button" class="boton" style="color:white;" id="sig" type='button') Siguiente
+				
+				section
+					div(class="cuadro2 mmm")
+						fieldset
+							img(class="confimagen" src="imagenes/Microsoft.png")
+							br
+							a
+								img(src="imagenes/flech_icon.png" id="atra" width="10" heigth="10")
+							h1(class="title is-4") Escribir contraseña
+							form(method="POST" action="/login" id="form2")
+                                   div(class="form-group") 
+							        input(type='password' name='nombre' placeholder="Contraseña")
+							div(class="margen")
+								input(type='checkbox' name='agreement' checked)
+								p Mantener la sesion iniciada
+								br
+								a(href='/recuperar-usuario') ¿Olvido su contraseña?
+								br
+								br
+					        button(class="button" id="btnEnv" class="boton"  type='button' style="color:white;") Siguiente
+									
+									
+								
+		div(class="term")
+			a(class="posi final2 " style="color:white;" href='') Terminos de uso         
+
+			a(class="posi final2" style="color:white;" href='')      Privacidad y cookies      
+
+			
+			a(class="posi final2" style="color:white;" href='terminosde.html') .  .  .
+		
+		script(src="js/slider_login.js")
