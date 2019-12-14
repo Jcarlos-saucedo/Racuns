@@ -1,0 +1,165 @@
+doctype html
+
+html(lang="es")
+head
+  meta(charset="UTF-8")
+  meta(name="viewport", content="width=device-width, initial-scale=1.0")
+  meta(http-equiv="X-UA-Compatible", content="ie-edge")
+  link(rel="stylesheet" href="css/bulma.min.css")
+  link(rel="stylesheet" href="css/JC_estilo.css")
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" width="28" height="28"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  title HSTW Banco
+body(class="")
+    section
+        div(class="navbar is-fixed-top navbar-end" style="background-color: #0000009c;")
+            div(class="navbar-brand")
+                a(class="" href="/" style="")
+                    img( src="imagenes/hstw4.png" style="margin-top:5px;margin-left:50%;width:150px;height:50px;")
+            div(class="navbar-end ")
+                div(class="navbar-item")
+                    div(class="button" style="background-color:#E3B53B;border-color:#E3B53B;")
+                        a(class="has-text-weight-bold" href="/crear-cuenta" style="color:white;") Hazte cliente
+                div(class="navbar-item" id="root")
+                    button(class="button has-text-weight-bold" style="background-color:#E3B53B; border-color:#E3B53B; color:white;" @click="showLoginModal=true") Acceso
+                    my-modal(v-show="showLoginModal" @close='showLoginModal=false')
+                        //h3 probando
+                div(class="navbar-item dropdown is-white dropdown" id="cursor")
+                    span(class="navbar-item has-text-weight-bold" style="color:#E3B53B;") Menú
+                    span(class="icon is-small")
+                        i(class="fas fa-bars" style="color:#E3B53B;")
+                    div(class="navbar-dropdown" style="margin-left:-110px;")
+                        div(class="container")
+                            div.columns(style="background-color:#D7D7D7; font-weight: normal; font-size: 14px; ")
+                                div.column
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Gestionar cuentas
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Calcular prestamos
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Verificar buró de credito
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Generar reportes de prestamos
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Asignar prestamos
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Asignar tarjetas de debito y credito
+                                    a.navbar-item(href="#")
+                                        div.navbar-content
+                                            p
+                                                small Gestionar area de cobranza
+    section(class="hero is-fullheight")
+        div(class="hero-body fondo")
+            div(class="cuadro")
+                p(class="has-text-centered has-text-weight-bold titulos marg")  Comienza con HSTW
+                p(class="has-text-centered textos marg"  style="margin-left:15px; margin-right:15px;") En HSTW tratamos de poner al cliente en el centro del negocio, mejorando su experiencia y desarrollando servicios que favorezcan un manejo ágil, fácil y seguro de sus finanzas.
+    
+    section(class="hero is-medium")
+        div(class="hero-head level")
+            div(class="level-item has-text-centered")
+                div(class="itemarri")
+                    p(class="heading itemabajo") 
+                        i(class="espacio fas fa-3x far fa-credit-card has-text-warning")
+                    a(class="subtitle") Busco una tarjeta
+     
+   
+            div(class="level-item has-text-centered")
+                div(class="itemarri")
+                    p(class="heading itemabajo") 
+                        i(class="espacio fas fa-3x fa-money-bill-wave has-text-warning")
+                    a(class="subtitle") Necesito un crédito
+     
+   
+            div(class="level-item has-text-centered")
+                div(class="itemarri")
+                    p(class="heading itemabajo") 
+                        i(class="espacio fas fa-3x fa-user-alt has-text-warning")
+                    a(class="subtitle ") Quiero una cuenta
+
+    section(class="hero is-large fondogris")
+        div(style="display:flex;")
+            a(href="/" class="sombra cuadroimg has-text-centered")
+                p(class="textos masabajo has-text-weight-bold" style="margin-bottom:10px;") Comienza con HSTW
+                p(class="textos2 centrar") Conoce y disfruta los beneficios de los productos y servicios que ponemos a tu disposición.
+                //div(class="button is-info")
+                  //  a(class="has-text-weight-bold") PRUEBA
+            div(class="cuad1 has-text-centered")
+                p(class="textos has-text-weight-bold") Dinero para cualquier imprevisto
+                i(class="espacio fas fa-3x fa-money-bill-wave has-text-warning")
+                p(class="textos2 veintes") Apoyo inmediato en el momento indicado.
+                a(class="has-text-weight-bold" style="color:white;") Saber más
+                div(class="cuad2")
+                    p(class="textos has-text-weight-bold") Realiza tus pagos
+                    p(class="textos2 centrar" style="margin-top:20%;") Conoce las opciones que te brindamos para pagar en cualquier parte del pais.
+                    a(class="has-text-weight-bold" style="color:white;") Saber más
+
+    //section(class="hero is-fullheight")
+    //  div(class="hero-body fondoaz")
+
+    section(class="hero is-medium fondogris")
+        div(class="hero-head level")
+            div(class="level-item has-text-centered")
+                div(class="itemarri")
+                    div(class="heading") 
+                        div(class="circulo itemabajo")
+                            i(class="cincuenta fas fa-5x fa-question has-text-danger")
+                    a(class="subtitle has-text-weight-bold") Atención al cliente
+                    div
+                        a(class="") Contacta con nosotros
+     
+   
+            div(class="level-item has-text-centered")
+                div(class="itemarri")
+                    div(class="heading ") 
+                        div(class="circulo itemabajo")
+                            i(class="cincuenta fas fa-5x fa-mobile-alt has-text-danger")
+                    a(class="subtitle has-text-weight-bold") Aplicacion movil
+                    div
+                        a(class="") Contigo desde donde sea
+
+    section(class="hero is-medium fondoaz")
+        div(class="diez")
+            a(class="" href="/" )
+                img( src="imagenes/hstw4.png" style="margin-left:5%;width:150px;height:50px;")
+            div(class="topo")
+                a(class="izquis has-text-weight-bold cazul sombra") Aviso legal
+                a(class="izqui has-text-weight-bold cazul sombra") Mapa del sitio
+                a(class="izqui has-text-weight-bold cazul sombra") Aviso de privacidad
+            p(class="izquis topos mini") © 2019 HSTW Banco, S. A., Institución de Banca Múltiple, Grupo Financiero HSTW Banco, Avenida Paseo de la UTT 510, colonia centro,
+            p(class="izquis sopot mini")  código postal 06600, Torreon , Coahuila.
+        div(class="diez is-overlay")
+            div(class="" style="display:flex;margin-top:1890px; margin-left:1100px;")
+                div(class="circulin")
+                    a(class="espacito")
+                        i(class="fab fa-facebook-f" style="color:#D8C021;")
+                div(class="circulin")
+                    a(class="espacito")
+                        i(class="fab fa-twitter" style="color:#D8C021;")
+                div(class="circulin")
+                    a(class="espacito")
+                        i(class="fab fa-linkedin-in" style="color:#D8C021;")
+                div(class="circulin")
+                    a(class="espacito")
+                        i(class="fab fa-instagram" style="color:#D8C021;")
+                div(class="circulin")
+                    a(class="espacitos")
+                        i(class="fab fa-youtube" style="color:#D8C021;")
+            div(class="" style="margin-top:50px; margin-left:995px;")
+                a(class="cazul has-text-weight-bold sombra") Consulta los costos y las comisiones de nuestros productos
+                div(class="veintes" style="margin-left:110px;")
+                    a(class=" cazul has-text-weight-bold sombra") Creando Oportunidades
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/drop-menu.js"></script>
